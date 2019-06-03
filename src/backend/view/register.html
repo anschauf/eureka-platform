@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>Register a new User</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </head>
+</head>
+<body>
+<div style="margin:100px;">
+    <div class="jumbotron"  style="padding:40px;">
+        <h1>EUREKA Backend App - Registration</h1>
+        <p>Test out the registration of a user in the backend</p>
+        <form method="POST" action="/api/register" name="register-form">
+            <label for="email">Email:</label>
+            <br/>
+            <input id="email" type="email" placeholder="email address" name="email"/>
+            <br/><br/>
+            <label for="password">Password:</label>
+            <br/>
+            <input id="password" type="text" placeholder="password" name="password"/>
+            <br/><br/>
+            <label for="ethereumAddress">Ethereum adress:</label>
+            <br/>
+            <input id="ethereumAddress" type="text" placeholder="ethereum address" name="ethereumAddress"/>
+            <br/><br/>
+            <label for="avatar">Avatar:</label>
+            <br/>
+            <input id="avatar" type="text" placeholder="avatar" value="test-avatar" name="avatar"/>
+            <br/><br/>
+            <input type="submit" class="btn btn-default" value="Create User">
+        </form>
+    </div>
+</div>
+</body>
+</html>
